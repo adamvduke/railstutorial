@@ -52,7 +52,7 @@ describe "LayoutLinks" do
   describe "when signed in" do
 
     before(:each) do
-      @user = Factory(:user)
+      @user = FactoryGirl.create(:user)
       integration_sign_in @user
     end
 
