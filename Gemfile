@@ -26,3 +26,8 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'growl'
 end
+
+group :production, :staging do
+  gem 'pg'
+  gem 'thin'
+end
